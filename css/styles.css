@@ -34,13 +34,6 @@ body {
     overflow: hidden;
 }
 
-.logo div {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 40px;
-}
-
 /* Projects */
 #projects {
     margin-top: 140px;
