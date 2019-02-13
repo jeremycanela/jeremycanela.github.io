@@ -10,12 +10,6 @@ function reload() {
 		$(this).outerWidth($(this).find(".default-button-sm").outerWidth());
 	});
 
-	$("img").on("load", function() {
-		$(".project-view").each(function() {
-			$(this).height($(this).find("img").height());
-		});
-	});
-
 	$(".highlight-container").hover(function() {
 		$(".highlight").clearQueue();
 		$(this).find(".highlight").animate({
@@ -89,6 +83,12 @@ $(window).bind("load", function() {
 			</div>`);
 			
 			reload();
+		});
+	}).then(function() {
+		$("img").on("load", function() {
+			$(".project-view").each(function() {
+				$(this).height($(this).find("img").height());
+			});
 		});
 	});
 
