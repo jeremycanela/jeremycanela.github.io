@@ -359,6 +359,10 @@ footer a i {
 		width: 100%;
 	}
 
+	#projects .project .project-view-outter {
+		height: 150px;
+	}
+
 	section#top-skills img.skill {
 		height: 70px;
 	}
