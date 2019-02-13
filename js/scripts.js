@@ -85,12 +85,10 @@ $(window).bind("load", function() {
 			reload();
 		});
 	}).then(function() {
-		$("img").each(function() {
-			$(this).on("load", function() {
-				$(".project-view").each(function() {
-					$(this).height($(this).find("img").height());
-				});
-			})
+		$("img").on("load", function() {
+			$(".project-view").each(function() {
+				$(this).height($(".project-view img").height());
+			});
 		});
 	});
 
