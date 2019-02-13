@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jeremy Canela</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
-		<div class="container">
-			<div class="logo"><div>Jeremy.</div></div>
-
-			<div id="projects">
-				<div class="project">
-					<a href="random-quote-generator">
-						<div class="view" style="background: url('images/project-1.jpg'); background-size: cover;background-position: center;"></div>
-						<h5>Project 1</h5>
-						<h1>Random Quote Generator</h1>
-						<p>Displays random famous quotes from a provided list of quotes.</p>
-					</a>
-				</div>
-				<div class="project">
-					<a href="list-pagination-and-filtering">
-						<div class="view" style="background: url('images/project-2.jpg'); background-size: cover;background-position: center;"></div>
-						<h5>Project 2</h5>
-						<h1>List pagination and filtering</h1>
-						<p>List of students enhanced with pagination and filtering. The search allows for any kind of search, from searching students’ name that start with “a”, to search specific names.</p>
-					</a>
-				</div>
-				<div class="project">
-					<a href="interactive-form">
-						<div class="view" style="background: url('images/project-3.jpg'); background-size: cover;background-position: center;"></div>
-						<h5>Project 3</h5>
-						<h1>Interactive Form</h1>
-						<p>Form with dynamic validation to enhance engagement, interactivity, and ease.</p>
-					</a>
-				</div>
-				<div class="project">
-					<a href="oop-game-show-app">
-						<div class="view" style="background: url('images/project-4.jpg'); background-size: cover;background-position: center;"></div>
-						<h5>Project 4</h5>
-						<h1>OOP Game Show App</h1>
-						<p>Word guessing game with an onscreen keybard and has functionability with your computer keyboard. Phrases are randomly selected from a provided list.</p>
-					</a>
-				</div>
-				<div class="project">
-					<a href="public-api-requests">
-						<div class="view" style="background: url('images/project-5.jpg'); background-size: cover;background-position: center;"></div>
-						<h5>Project 5</h5>
-						<h1>Public API Requests</h1>
-						<p>An app for a ficitonal company called Awesome Startup. Using the Random User Generator API, I've requested a list of 12 "employees" and displayed them. Employees will use this app as a way to share contact information with each other.</p>
-					</a>
-				</div>
-				<div class="project">
-					<a href="https://static-nodejs-and-express-site.herokuapp.com/">
-						<div class="view" style="background: url('images/project-6.jpg'); background-size: cover;background-position: center;"></div>
-						<h5>Project 6</h5>
-						<h1>Static Node.js and Express Site</h1>
-						<p>A gorgeous portfolio site to showcase the great projects I've built. The site contains a modern landing page, an about page with my contact info, and a series of project pages from my Techdegree.</p>
+		<div id="contact">
+			<div class="vertical-container">
+				<ul>
+					<li>
+						<a href="https://github.com/jeremycanela" target="_blank"><i class="fab fa-github"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/jeremy-canela-8a7131a7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					</li>
+					<li>contact me</li>
+				</ul>
+				<hr class="line">
+				<div class="default-button-container-sm rotate-to-initial">
+					<a href="mailto:jeremycanela@gmail.com">
+						<div class="default-button-sm">
+							<i class="fas fa-paper-plane"></i>
+						</div>
 					</a>
 				</div>
 			</div>
-
-			<ul id="progress">
-				<li class="done"><h1><i class="fas fa-check-square"></i>Random Quote Generator</h1></li>
-				<li class="done"><h1><i class="fas fa-check-square"></i>List pagination and filtering</h1></li>
-				<li class="done"><h1><i class="fas fa-check-square"></i>Interactive Form</h1></li>
-				<li class="done"><h1><i class="fas fa-check-square"></i>OOP Game Show App</h1></li>
-				<li class="done"><h1><i class="fas fa-check-square"></i>Public API Requests</h1></li>
-				<li class="done"><h1><i class="fas fa-check-square"></i>Static Node.js and Express site</h1></li>
-				<li class="in-progress"><h1><i class="fas fa-long-arrow-alt-right"></i>React Gallery App</h1></li>
-				<li><h1><i class="fas fa-square"></i>SQL Library Manager</h1></li>
-				<li><h1><i class="fas fa-square"></i>REST API</h1></li>
-				<li><h1><i class="fas fa-square"></i>Full Stack App with React and a REST API</h1></li>
-				<li><h1><i class="fas fa-star"></i>Full Stack Javascript Techdegree</h1></li>
-			</ul>
+		</div>
+		<div class="container">
+			<header class="clearfix" id="top">
+				<div class="default-button-container-lg logo">
+					<a href="/">
+						<div class="default-button-lg">Jeremy.</div>
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#projects">projects</a></li>
+						<li><a href="https://docs.google.com/document/d/1WpyqAAMFpYgrOjWEfMTtF7L-X4befoNtyqF846DRdUQ/edit?usp=sharing" target="_blank">r&eacute;sum&eacute;</a></li>
+						<li>
+							<div class="default-button-container-sm">
+								<a href="mailto:jeremycanela@gmail.com">
+									<div class="default-button-sm">contact</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<img class="section-emoji waving" src="images/waving-hand.png" alt="Waving hand">
+				<h1>Hello!</h1>
+				<h1>I'm Jeremy Canela</h1>
+				<h1>A <strong>Full Stack JavaScript Web Developer</strong></h1>
+				<p class="projects-button highlight-container"><span class="highlight"></span><a href="#projects"><i class="far fa-arrow-alt-circle-down"></i> see projects below</a></p>
+			</main>
+			<section id="projects"></section>
+			<section id="techdegree">
+				<div class="section-emoji"><img src="images/glowing-star.png" alt="Glowing Star"></div>
+				<h1>Full Stack JavaScript Techdegree</h1>
+				<a href="https://verify.accredible.com/verify/id?value=12498064&custom=false&_ga=2.257635656.253312564.1549345749-1673417036.1549000589" target="_blank">
+					<div class="techdegree-view">
+						<img src="/images/full-stack-javascript-techdegree.jpg">
+					</div>
+				</a>
+				<img src="images/shadow.png" class="shadow">
+			</section>
+			<section id="top-skills">
+				<div class="section-emoji"><img src="images/hammer-and-wrench.png" alt="Hammer and wrench"></div>
+				<h1>Top Skills</h1>
+				<img src="images/html_css_js.png" alt="HTML, CSS, and JavaScript" class="skill">
+				<img src="images/jquery.gif" alt="jQuery" class="skill">
+				<img src="images/nodejs.png" alt="NodeJS" class="skill">
+				<img src="images/express.png" alt="ExpressJS" class="skill">
+				<img src="images/photoshop.png" alt="Photoshop" class="skill">
+				<img src="images/react.png" alt="ReactJS" class="skill">
+				<img src="images/mongodb.png" alt="MongoDB" class="skill">
+				<img src="images/sql.png" alt="SQL" class="skill">
+				<img src="images/sequelize.png" alt="Sequelize" class="skill">
+				<img src="images/git.png" alt="Git" class="skill">
+			</section>
+			<footer>
+				<a href="#top"><i class="far fa-arrow-alt-circle-up"></i>back to top</a>
+			</footer>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/tilt.js"></script>
