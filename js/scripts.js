@@ -58,46 +58,40 @@ $(window).bind("load", function() {
 		maxGlare: .75
 	});
 
-	reload();
-});
-
-fetch('/projects.json')
-.then(function(res) {
-	return res.json();
-})
-.then(function(projects) {
-	projects.projects.forEach((project, index) => {
-		index < 10 ? index = `0${index + 1}` : index = index;
-		const technologies = project.technologies.join(" &middot; ");
-		$("#projects").prepend(`<div class="project clearfix">
-			<div class="project-view-outter">
-				<div class="project-view-container">
-					<div class="project-view">
-						<img src="${project.view}" alt="${project.title}">
+	fetch('/projects.json')
+	.then(function(res) {
+		return res.json();
+	})
+	.then(function(projects) {
+		projects.projects.forEach((project, index) => {
+			index < 10 ? index = `0${index + 1}` : index = index;
+			const technologies = project.technologies.join(" &middot; ");
+			$("#projects").prepend(`<div class="project clearfix">
+				<div class="project-view-outter">
+					<div class="project-view-container">
+						<div class="project-view">
+							<img src="${project.view}" alt="${project.title}">
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="project-details-outter">
-				<div class="project-details">
-					<h2 class="project-number">#${index}</h2>
-					<h5 class="project-technologies">${technologies}</h5>
-					<h2 class="project-title">${project.title}</h2>
-					<p class="project-description">${project.description}</p>
-					<div class="default-button-container-sm">
-						<a href=${project.url} target="_black">
-							<div class="default-button-sm">
-								<span>visit project <i class="far fa-arrow-alt-circle-right"></i></span></div>
-						</a>
+				<div class="project-details-outter">
+					<div class="project-details">
+						<h2 class="project-number">#${index}</h2>
+						<h5 class="project-technologies">${technologies}</h5>
+						<h2 class="project-title">${project.title}</h2>
+						<p class="project-description">${project.description}</p>
+						<div class="default-button-container-sm">
+							<a href=${project.url} target="_black">
+								<div class="default-button-sm">
+									<span>visit project <i class="far fa-arrow-alt-circle-right"></i></span></div>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>`);
-		if(index === projects.projects.length) {
-			return true;
-		}
+			</div>`);
+			
+			reload();
+		});
 	});
-}).then(function(done) {
-	if(done) {
-		reload();
-	}
+
 });
