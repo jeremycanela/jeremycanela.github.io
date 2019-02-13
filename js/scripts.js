@@ -10,12 +10,10 @@ function reload() {
 		$(this).outerWidth($(this).find(".default-button-sm").outerWidth());
 	});
 
-	$(".project-view-outter").each(function() {
-		$(this).height($(this).find(".project-view img").height());
-	});
-
-	$(".project-view").each(function() {
-		$(this).height($(this).find("img").height());
+	$("img").on("load", function() {
+		$(".project-view").each(function() {
+			$(this).height($(this).find("img").height());
+		});
 	});
 
 	$(".highlight-container").hover(function() {
