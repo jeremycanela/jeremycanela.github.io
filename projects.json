@@ -23,14 +23,14 @@
 		},
 		{
 			"title": "OOP Game Show App",
-			"description": "Word guessing game with an onscreen keyboard and has functionality with your computer keyboard. Phrases are randomly selected from a provided list.",
+			"description": "Word guessing game with an onscreen keybard and has functionability with your computer keyboard. Phrases are randomly selected from a provided list.",
 			"technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
 			"view": "images/oop-game-show-app.png",
 			"url": "http://jeremycanela.com/oop-game-show-app/"
 		},
 		{
 			"title": "Public API Requests",
-			"description": "An app for a fictional company called Awesome Startup. Using the Random User Generator API, I've requested a list of 12 \"employees\" and displayed them. Employees will use this app as a way to share contact information with each other.",
+			"description": "An app for a ficitonal company called Awesome Startup. Using the Random User Generator API, I've requested a list of 12 \"employees\" and displayed them. Employees will use this app as a way to share contact information with each other.",
 			"technologies": ["HTML", "CSS", "JavaScript", "jQuery", "AJAX"],
 			"view": "images/public-api-requests.png",
 			"url": "http://jeremycanela.com/public-api-requests/"
@@ -51,8 +51,7 @@
 		},
 		{
 			"title": "Full Stack App with React and a REST API",
-			"description": "A full stack application for users to administer a school database containing information about courses: users can interact with the database by retrieving a list of courses, viewing detail for a speci
-			course, as well as creating, updating and deleting courses.",
+			"description": "A full stack application for users to administer a school database containing information about courses: users can interact with the database by retrieving a list of courses, viewing detail for a specific course, as well as creating, updating and deleting courses.",
 			"technologies": ["HTML", "CSS", "JavaScript", "React", "Express", "MongoDB"],
 			"view": "images/full-stack-app-with-react-and-a-rest-api.png",
 			"url": "https://heuristic-goldwasser-5fbd48.netlify.com/"
