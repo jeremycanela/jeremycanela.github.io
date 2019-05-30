@@ -1,27 +1,5 @@
 function reload() {
 	$("body").animate({opacity: 1}, 1000);
-	$(".default-button-container-lg").each(function() {
-		$(this).outerHeight($(this).find(".default-button-lg").outerHeight());
-		$(this).outerWidth($(this).find(".default-button-lg").outerWidth());
-	});
-
-	$(".default-button-container-sm").each(function() {
-		$(this).outerHeight($(this).find(".default-button-sm").outerHeight());
-		$(this).outerWidth($(this).find(".default-button-sm").outerWidth());
-	});
-
-	$(".highlight-container").hover(function() {
-		$(".highlight").clearQueue();
-		$(this).find(".highlight").animate({
-			opacity: 1,
-			bottom: "-8px"
-		}, 250);
-	}, function() {
-		$(this).find(".highlight").animate({
-			opacity: 0,
-			bottom: "-20px"
-		}, 250);
-	});
 }
 
 function wavingEmoji() {
@@ -42,7 +20,6 @@ function wavingEmoji() {
 }
 
 $(window).bind("load", function() {
-	setTimeout(wavingEmoji, 1000);
 	setInterval(wavingEmoji, 5000);
 
 	$('.techdegree-view').tilt({
@@ -61,9 +38,9 @@ $(window).bind("load", function() {
 			$("#projects").prepend(`<div class="project clearfix">
 				<div class="project-view-outter">
 					<div class="project-view-container">
-						<div class="project-view">
+						
 							<img src="${project.view}" alt="${project.title}">
-						</div>
+						
 					</div>
 				</div>
 				<div class="project-details-outter">
@@ -72,23 +49,14 @@ $(window).bind("load", function() {
 						<h5 class="project-technologies">${technologies}</h5>
 						<h2 class="project-title">${project.title}</h2>
 						<p class="project-description">${project.description}</p>
-						<div class="default-button-container-sm">
-							<a href=${project.url} target="_black">
-								<div class="default-button-sm">
-									<span>visit project <i class="far fa-arrow-alt-circle-right"></i></span></div>
-							</a>
-						</div>
+						<a href=${project.url} target="_black">
+							<div class="default-button-sm"><span>visit project <i class="far fa-arrow-alt-circle-right"></i></span></div>
+						</a>
 					</div>
 				</div>
 			</div>`);
 			
 			reload();
-		});
-	}).then(function() {
-		$("img").on("load", function() {
-			$(".project-view").each(function() {
-				$(this).height($(".project-view img").height());
-			});
 		});
 	});
 

@@ -23,14 +23,14 @@
 		},
 		{
 			"title": "OOP Game Show App",
-			"description": "Word guessing game with an onscreen keyboard and has functionality with your computer keyboard. Phrases are randomly selected from a provided list.",
+			"description": "Word guessing game with an onscreen keybard and has functionability with your computer keyboard. Phrases are randomly selected from a provided list.",
 			"technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
 			"view": "images/oop-game-show-app.png",
 			"url": "http://jeremycanela.com/oop-game-show-app/"
 		},
 		{
 			"title": "Public API Requests",
-			"description": "An app for a fictional company called Awesome Startup. Using the Random User Generator API, I've requested a list of 12 \"employees\" and displayed them. Employees will use this app as a way to share contact information with each other.",
+			"description": "An app for a ficitonal company called Awesome Startup. Using the Random User Generator API, I've requested a list of 12 \"employees\" and displayed them. Employees will use this app as a way to share contact information with each other.",
 			"technologies": ["HTML", "CSS", "JavaScript", "jQuery", "AJAX"],
 			"view": "images/public-api-requests.png",
 			"url": "http://jeremycanela.com/public-api-requests/"
